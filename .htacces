@@ -1,0 +1,10 @@
+
+<Files ~ "\.pdf$">
+    Header set X-Robots-Tag "noindex, nofollow"
+  </Files>
+
+<Files ~ "\.(png|jpe?g|gif)$">
+
+    Header set X-Robots-Tag "noindex"
+    
+    </Files>
