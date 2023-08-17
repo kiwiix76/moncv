@@ -1,0 +1,428 @@
+/*--------------------------------------------------------------
+# Responsive
+--------------------------------------------------------------*/
+
+/* Masquer l'icone pour les écrans de moins de 767px */
+@media screen and (max-width: 767px) {
+  .navbar-brand{
+    display: none;
+  }
+ 
+}
+/* image taille max 700px */
+@media screen and (min-width: 700px) {
+  .hero-inferieur-image{
+    max-width: 600px;
+  }
+ 
+}
+
+
+/*
+1. General
+2. Header
+3. Section Hero / Principale
+4. A propos de moi
+5. Experience
+6. Resume
+7. logos
+8. Button top
+9. Contact
+10. Footer
+
+
+/*--------------------------------------------------------------
+# 1. General
+--------------------------------------------------------------*/
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  background-color: rgb(27, 29, 42);;
+}
+
+a {
+  color: #fdc134;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fdd067;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+h2 {
+  color: #2f9684;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-titre {
+  font-size: 2rem;
+  padding: 15px 0; /* 15 en haut et en bas et 0 à la izquierda y la derecha */
+  font-family: 'Rubik Dirt', cursive;
+  
+}
+.section-texte {
+  font-size: 1.2rem;  
+}
+
+.section-sombre {
+  color: white;
+  background-color: #1b1b32;
+  
+}
+
+.section-claire {
+  color: black;
+  background-color: #cfd3e8;
+  margin-bottom: 30px;
+}
+
+/*--------------------------------------------------------------
+# 2. Header
+--------------------------------------------------------------*/
+
+
+.navbar {
+  padding: 0.7rem;
+  background-color: #395d80;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.titre-logo {
+
+    font-size: 24px;
+    margin: 0;
+    padding: 10px 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-link {
+  color:white;
+}
+.nav-link:hover {
+  color:#6894bd;
+}
+.real {
+  font-size: 2rem;
+  padding: 0; /* 15 en haut et en bas et 0 à la izquierda y la derecha */
+  font-family: "Poppins", sans-serif;
+  color:#213b53
+
+}
+
+
+
+/*--------------------------------------------------------------
+# 3. Section Hero / Principale 
+--------------------------------------------------------------*/
+
+
+.hero {
+  background-color: #213b53;
+  min-height: 450px;
+  text-align: center;
+}
+.hero-principal h1{
+  padding: 3rem;  
+  color: #d2e0ed; 
+  /* font-size: 48px; */
+  font-weight: 700;
+  line-height: 56px;
+  color: #d2e0ed;
+  font-family: "Poppins", sans-serif;
+  
+}
+.hero-image-desarrollador {
+  width:400px;
+  height: 399px;
+  border-radius: 50%;
+  margin: 20px;
+}
+.hero-principal h2 {
+  font-size: 1.5rem;
+  color:#84cfc6;
+}
+.hero-inferieur-image {
+  margin: 10px;
+  width: 70%;
+  height: 70%;
+  margin: 0 auto;
+}
+.beweb-icon {
+  width: 25%;
+  height: 90%;
+}
+
+/*--------------------------------------------------------------
+# 4. About 
+--------------------------------------------------------------*/
+
+.about {
+  background-color: #213b53;
+}
+
+.about h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: justify;
+  padding: 20px;
+/* font-family: "Poppins", sans-serif; */
+}
+.real1 {
+  font-size: 2rem;
+  padding: 10px 20px 0px 0px; /* 15 en haut et en bas et 0 à la izquierda y la derecha */
+  font-family: "Poppins", sans-serif;
+  color:#c0cdd9
+}
+
+/*--------------------------------------------------------------
+# 5. Experience 
+--------------------------------------------------------------*/
+
+
+.experience {
+  padding: 40px 40px 60px 80px;
+  
+} 
+.experience i {
+  font-size: 2.5rem;
+  color:#7ade30;
+  background-color: #0a0a23;
+  padding: 8px 19px;
+  border-radius: 50%;
+} 
+
+.experience-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.badges-contenedor {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+  }
+.badge {
+  margin: 5px;
+}
+.experience .columna {
+  padding: 50px;
+  border: 0px solid #2f9684;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 1.5 ease-in;
+  border-radius: 7px;
+}
+.experience .columna:hover {
+  color: white;
+  background-color: #2f9684;
+  border-radius: 7px;
+}
+.portfolio {
+  background-color: #213b53;
+}
+
+
+/*--------------------------------------------------------------
+# 6. Resume
+--------------------------------------------------------------*/
+.resume {
+  padding: 30px;
+}
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #2f9684;
+  margin-bottom: 10px;
+}
+
+.resume-item p {
+  color: white;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color:white;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+  color: white;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #18d26e;
+  border: 2px solid #18d26e;
+}
+.mb-5 {
+  padding-top: 60px;
+}
+
+
+/*--------------------------------------------------------------
+# 7. logos
+--------------------------------------------------------------*/
+.logos {
+  
+  padding: 1rem;
+  background-color: #395d80;
+  margin: 0 auto;
+  }
+
+  
+
+/*--------------------------------------------------------------
+# 8. Button top
+--------------------------------------------------------------*/
+
+#scroll_to_top {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  bottom: 50px;
+  right: 30px;
+}
+#scroll_to_top img {
+  width: 25px;
+}
+
+/*--------------------------------------------------------------
+# 9. Contact
+--------------------------------------------------------------*/
+.contacto .container {
+  max-width: 100%;
+  min-height: 100px;
+  padding: 0px;
+  
+  
+}
+.contacto .rectangulo {
+  margin-top: -5rem;
+  background-color: #213b53;
+  border-radius: 4px;
+  box-shadow: 0px 1px 4px 1px rgb(37, 35, 62);
+  font-family: "Poppins", sans-serif;
+
+
+}
+.contacto .row {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.contacto .descripcion {
+  color: white;
+  font-size: 1.2rem;
+}
+.boton_contact {
+  color:white; 
+  font-weight: bold;
+  background-color: transparent;
+  /* border: 2px solid white;
+  padding: 0.8em 2em;
+  margin: 10px;
+  border-radius: 60px; */
+  /* transition: all 0.2s ease-in-out; */
+}
+.boton_contact:hover {
+  /* background-color: #1b1b32; */
+  color:rgb(196, 176, 176);
+  
+}
+.boton_contact i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+.boton_contact:hover i {
+  color: rgb(196, 176, 176);
+}
+.titre_contacto {
+  padding-bottom: 60px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color:#c0cdd9;
+
+}
+/*--------------------------------------------------------------
+# 10. Footer
+--------------------------------------------------------------*/
+.footer-texto {
+  font-size: 1rem;
+  color: white;
+  padding: 20px 0 0 10px
+}
+.footer-texto a:hover {
+  color: #6fd6c5;
+  text-decoration: none;
+}
+.footer-texto a {
+  color: #2f9684;
+  text-decoration: none;
+}
